@@ -83,6 +83,7 @@ properties{
     float: right;
     position: absolute;
     border: 1px rgb(0, 0, 0) double;
+}
 .minimize-but{
     background-color: black;
     color: white;
