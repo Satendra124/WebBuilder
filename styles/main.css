@@ -12,9 +12,10 @@ pallete{
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.253) 0px 0px 30px 0px;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.123);
+    border: 1px solid rgba(0, 0, 0, 0.041);
     right: 50px;
     top: 10px;
+    background-color: rgb(175, 175, 175);
 }
 .pallete-head{
     border-bottom: 1px solid rgba(0, 0, 0, 0.096);
@@ -50,7 +51,19 @@ pallete{
     height: 30px;
     left: 10vw;
     top:10vw;
-}
-.draggable{
     cursor: move;
+
+}
+.sizer{
+    width: 3px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: black;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.sizer:hover{
+    cursor: se-resize;
+
 }
