@@ -9,13 +9,17 @@ pallete{
     position: absolute;
     z-index: 10000;
     width: 300px;
-    height: 500px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.253) 0px 0px 30px 0px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.041);
     right: 50px;
     top: 10px;
     background-color: rgb(175, 175, 175);
+    overflow: hidden;
+}
+.options{
+    height: 475px;
 }
 .pallete-head{
     border-bottom: 1px solid rgba(0, 0, 0, 0.096);
@@ -52,7 +56,6 @@ pallete{
     left: 10vw;
     top:10vw;
     cursor: move;
-
 }
 .sizer{
     width: 3px;
@@ -66,4 +69,12 @@ pallete{
 .sizer:hover{
     cursor: se-resize;
 
+}
+.minimize-but{
+    background-color: black;
+    color: white;
+    float: right;
+    margin: 0px;
+    width: 30px;
+    cursor: pointer;
 }
