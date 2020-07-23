@@ -1,10 +1,6 @@
 let is_pallet_minimized=false;
 window.addEventListener('load', () => {
     init();
-    let pallete = $('#pallete');
-    let pHead = $('#pallete-head');
-    moveElement(pallete,pHead);
-    minimize($('.options'),$('.minimize-but'))
 })
 let currid=0;
 let is_resize = false;
@@ -20,12 +16,12 @@ function init() {
     }
     let canvas = document.querySelector('#canvas')
     let ctx = canvas.getContext('2d')
-    canvas.height = window.innerHeight
-    canvas.width = window.innerWidth
+    canvas.height = window.innerHeight * 4
+    canvas.width = window.innerWidth * 0.65
 }
 
 function drawDiv(){
-    $('body').append('<div class="default-div" id="div-'+currid+'">Text<div class="sizer" id="sizer-'+currid+'"></div></div>');
+    $('.canvas-container').append('<div class="default-div" id="div-'+currid+'">Text<div class="sizer" id="sizer-'+currid+'"></div></div>');
     sizeElement($('#div-'+currid+''),$('#sizer-'+currid+''));
     moveElement($('#div-'+currid+''),$('#div-'+currid+''));
     currid++;
