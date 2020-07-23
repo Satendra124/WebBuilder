@@ -6,3 +6,4 @@ Two basics parts
     * Whole page will be a canvas with floating menu in which user can select and draw.
   * Processing and generating code
     * Javascript to generate code by cordinates and data about the drawing which will be saved realtime with drawing
+ 
