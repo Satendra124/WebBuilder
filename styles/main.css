@@ -23,6 +23,10 @@ pallete{
     border: 1px solid rgba(0, 0, 0, 0.041);
     top: 5vh;
     background-color: rgb(175, 175, 175);
+    overflow: hidden;
+}
+.options{
+    height: 475px;
 }
 .pallete-head{
     border-bottom: 1px solid rgba(0, 0, 0, 0.096);
@@ -56,7 +60,6 @@ pallete{
     left: 20vw;
     top:20vh;
     cursor: move;
-
 }
 .sizer{
     width: 3px;
@@ -80,4 +83,11 @@ properties{
     float: right;
     position: absolute;
     border: 1px rgb(0, 0, 0) double;
+.minimize-but{
+    background-color: black;
+    color: white;
+    float: right;
+    margin: 0px;
+    width: 30px;
+    cursor: pointer;
 }

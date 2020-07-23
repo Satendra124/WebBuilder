@@ -1,3 +1,4 @@
+let is_pallet_minimized=false;
 window.addEventListener('load', () => {
     init();
 })
@@ -56,12 +57,21 @@ function sizeElement(element,target){
             element.css('width', initW + enew.clientX - oldX)
             element.css('height', initH + enew.clientY - oldY) 
             }
-            
-            
         }
         document.addEventListener('mousemove', size)
         target.mouseup((e) => {
             document.removeEventListener('mousemove', size)
         })
+    })
+}
+function minimize(element,target){
+    target.click(()=>{
+        if(is_pallet_minimized){
+            element.fadeIn();
+            is_pallet_minimized=false;
+        }else{
+            element.fadeOut();
+            is_pallet_minimized=true;
+        }
     })
 }
