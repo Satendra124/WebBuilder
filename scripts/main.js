@@ -77,4 +77,5 @@ function minimize(element,target){
 }
 function myFunction(){
     
+   
 }
