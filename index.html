@@ -11,15 +11,67 @@
     <pallete id="pallete">
         <div class="pallete-head" id="pallete-head">Pallete<div class="minimize-but">-</div></div>
         <div class="options">
-            <div class="option div" onclick="drawDiv()"><i>div<i></div>
-            <button id="button" onclick="myFunction()">Button</button>
+            <!-- <div class="option div" onclick="drawDiv()"><i>div<i></div>
+            <button id="button" onclick="myFunction()">Button</button> -->
+            
+            <div class="divs">
+                <div class="subdivs" onclick="toggle('layout')">layouts</div>
+                <div class="option-list" id="layout">
+                    <div class="option">Grid</div>
+                    <div class="option">Relative</div>
+                    <div class="option">Linear</div>
+                </div>
+            </div>
+            <div class="divs">
+                <div class="subdivs" onclick="toggle('structures')">Structures</div>
+                <div class="option-list" id="structures">
+                    <div class="option">Rectangle</div>
+                    <div class="option">Size Box</div>
+                </div>
+            </div>
+            <div class="divs">
+                <div class="subdivs" onclick="toggle('wizards')">Wizards</div>
+                <div class="option-list" id="wizards">
+                    <div class="option">Buttons</div>
+                    <div class="option">Tables</div>
+                </div>
+            </div>
+            <div class="divs">
+                <div class="subdivs" onclick="toggle('media')">Media</div>
+                <div class="option-list" id="media">
+                    <div class="option">Image / Gif</div>
+                    <div class="option">Video</div>
+                    <div class="option">Audio</div>
+                    <div class="option">Youtube</div>
+                    <div class="option">Vector</div>
+
+                </div>
+            </div>
+            <div class="divs">
+                <div class="subdivs" onclick="toggle('input')">Input</div>
+                <div class="option-list" id="input">
+                    <div class="option">Text</div>
+                    <div class="option">Text Field</div>
+                    <div class="option">Slider</div>
+                    <div class="option">Check Box</div>
+                    <div class="option">Date</div>
+                    <div class="option">File</div>
+                    <div class="option">Radio Button</div>
+                    <div class="option">Choice Box</div>
+                    <div class="option">Lable</div>
+                </div>
+            </div>
+            <div class="divs">
+                <div class="subdivs" onclick="toggle('advanced')">Advanced</div>
+                <div class="option-list" id="advanced">
+                    <div class="option">Iframe</div>
+                </div>
+            </div>
         </div>
     </pallete>
     <div class="canvas-container"><canvas id="canvas">Your Browser donot support Canvas</canvas></div>
     <properties></properties>
-    <div>satendra</div>
 </body>
-
 <script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
