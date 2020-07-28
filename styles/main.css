@@ -23,7 +23,18 @@ pallete{
     border: 1px solid rgba(0, 0, 0, 0.041);
     top: 5vh;
     background-color: rgb(175, 175, 175);
-    overflow: hidden;
+    overflow: scroll;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.493);
+}
+::-webkit-scrollbar-thumb{
+    background-color: aliceblue;
+    border: 1px black solid;
 }
 .options{
     height: 475px;
@@ -84,14 +95,6 @@ properties{
     position: absolute;
     border: 1px rgb(0, 0, 0) double;
 }
-.minimize-but{
-    background-color: black;
-    color: white;
-    float: right;
-    margin: 0px;
-    width: 30px;
-    cursor: pointer;
-}
 .subdivs > span{
     padding: 4px;
 }
@@ -102,4 +105,8 @@ properties{
 }
 .option-list{
     display: none;
+}
+.option:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+    cursor: pointer;
 }

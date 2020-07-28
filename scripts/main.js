@@ -64,17 +64,6 @@ function sizeElement(element,target){
         })
     })
 }
-function minimize(element,target){
-    target.click(()=>{
-        if(is_pallet_minimized){
-            element.fadeIn();
-            is_pallet_minimized=false;
-        }else{
-            element.fadeOut();
-            is_pallet_minimized=true;
-        }
-    })
-}
 function myFunction(){
     
    
